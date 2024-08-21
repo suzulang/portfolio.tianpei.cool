@@ -2,26 +2,27 @@
 import { basics } from "@cv";
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
-import Phone from "@/icons/Phone.astro";
 import X from "@/icons/X.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import Github from "@/icons/Github.astro";
 import WorldMap from "@/icons/WorldMap.astro";
+import Blog from "@/icons/Blog.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, email } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
 	Github,
 	LinkedIn,
 	X,
+	Blog,
 };
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
 const linkedUrl = linkedInfo?.url;
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
+const printInfo = [email, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -60,16 +61,15 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 					)
 				}
 				{
-					phone && (
-						<a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
-							<Phone />
-						</a>
-					)
-				}
-				{
 					profiles.map(({ network, url }) => {
 						const Icon = SOCIAL_ICONS[network];
-
+						if (network === "Blog") {
+							return (
+								<a href={url} title={`Visit ${name}'s blog`} target="_blank" rel="noopener noreferrer">
+									<Icon />
+								</a>
+							);
+						}
 						return (
 							<a href={url} title={`Visit ${name} profile on ${network}`} target="_blank" rel="noopener noreferrer">
 								<Icon />
@@ -77,12 +77,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						);
 					})
 				}
-				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
-					<svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6 icon-tabler icon-tabler-command"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"></path>
-					</svg>
-				</div>
 			</footer>
 		</div>
 		<figure class="print:hidden w-fit relative">

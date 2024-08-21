@@ -1,12 +1,11 @@
 {
   "basics": {
-    "name": "人生 现役 ",
+    "name": "suzulang",
     "label": "Junior Full Stack Developer",
     "image": "/me_avatar.jpg",
     "email": "suzulang.jiang@gmail.com",
-    "phone": "+1 555-555-5555",
     "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "summary": "Full Stack Developer specializing in Rails backend and Next.js frontend. Passionate about efficient web apps and Ruby philosophy. Eager to grow and contribute in a professional setting.",
     "theme": "default",
     "location": {
       "address": "",
@@ -16,6 +15,10 @@
       "region": "China"
     },
     "profiles": [
+      {
+        "network": "Blog",
+        "url": "https://blog.tianpei.cool"
+      },
       {
         "network": "LinkedIn",
         "username": "tianpei-jiang",
@@ -35,55 +38,25 @@
   },
   "work": [
     {
-      "name": "to do",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
+      "name": "MJ",
+      "position": "Junior Azure Developer",
       "location": "Shanghai, China",
-      "url": "https://techstartup.com",
       "startDate": "2024-01-01",
       "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
+        "Organize and develop Azure Data Factory pipelines and dataflows according to project requirements",
+        "Conduct thorough testing of Azure solutions to ensure reliability and performance",
+        "Create comprehensive documentation for Azure development processes and best practices",
+        "Collaborate with team members to implement and optimize Azure-based solutions"
       ],
       "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Rapidly acquired proficiency in Azure technologies, demonstrating strong learning capabilities",
+        "Developed a comprehensive internal documentation for Azure development, facilitating easier onboarding and knowledge sharing for future team members",
+        "Contributed to the successful implementation of several Azure Data Factory projects, improving data processing efficiency"
       ],
       "skills": [
-        "Tailwind",
+        "Azure",
         "Github"
-      ]
-    },
-    {
-      "name": "to do",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2018-06-01",
-      "endDate": "2021-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
-      "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
-      ],
-      "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
       ]
     }
   ],
@@ -185,8 +158,6 @@
       "name": "Docker",
       "keywords": "tool"
     }
-
-  
   ],
   "languages": [
     {
@@ -224,6 +195,18 @@
       ],
       "url": "https://food.tianpei.cool",
       "github": "https://github.com/suzulang/food_menu"
+    },
+    {
+      "name": "Qwerty Learner",
+      "isActive": true,
+      "description": "An open-source typing practice tool designed for keyboard workers to enhance word memory and English muscle memory.",
+      "highlights": [
+        "Contributed to the Japanese dictionary component of the project",
+        "Collaborated with a team of developers to improve language learning features",
+        "Gained experience in open-source contribution and version control using Git"
+      ],
+      "url": "https://qwerty.kaiyi.cool/",
+      "github": "https://github.com/RealKai42/qwerty-learner"
     }
   ]
 }
