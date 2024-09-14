@@ -5,7 +5,7 @@
     "image": "/me_avatar.jpg",
     "email": "suzulang.jiang@gmail.com",
     "url": "https://johndoe.dev",
-    "summary": "Full Stack Developer specializing in Rails backend and Next.js frontend. Passionate about efficient web apps and Ruby philosophy. Eager to grow and contribute in a professional setting.",
+    "summary": "Eager to grow and contribute in a professional setting.",
     "theme": "default",
     "location": {
       "address": "",
@@ -17,12 +17,7 @@
     "profiles": [
       {
         "network": "Blog",
-        "url": "https://blog.tianpei.cool"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "tianpei-jiang",
-        "url": "https://linkedin.com/in/tianpei-jiang"
+        "url": "https://note.com/suzulang/n/n352bead81dfb"
       },
       {
         "network": "X",
